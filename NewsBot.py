@@ -22,11 +22,10 @@ load_dotenv()
 st.title("News Research Assistant")
 st.caption("Ask questions based on provided news articles. The database resets when you refresh!")
 
-
-""" Check if vectorestore is present, if not, initialize it to None. 
-    This is important because the vectorstore is used to store the embeddings of the 
-    processed articles, and we want to ensure that it is initialised so that articles
-    are stored seamlessly."""
+#  Check if vectorestore is present, if not, initialize it to None. 
+#  This is important because the vectorstore is used to store the embeddings of the 
+#  processed articles, and we want to ensure that it is initialised so that articles
+#  are stored seamlessly.
 
 
 if "vectorstore" not in st.session_state:
